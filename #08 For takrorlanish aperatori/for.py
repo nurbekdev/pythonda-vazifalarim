@@ -1,7 +1,7 @@
 dostlar = ['ali' , 'vali' , 'umar' , 'anvar' , 'sarvar', 'hasan']
 for dost in dostlar:
     print(f"Salom {dost.title()} ")
-    
+
 print(f"Dastur {len(dostlar)} marta takrorlandi")
 
 sonlar = list(range(10,101,3))
@@ -16,7 +16,6 @@ print(dostlar)
 
 dostlar = []
 n = int(input("Nechta odam bilan suhbatlashdingiz: "))
-for a in range(n):
-    dostlar.append(input(f"{a+1} - odamning ismini kiriting: "))
+dostlar.extend(input(f"{a+1} - odamning ismini kiriting: ") for a in range(n))
 print(f"Sizning do'stlaringiz: {dostlar}")
   
